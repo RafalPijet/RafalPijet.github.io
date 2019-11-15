@@ -24,7 +24,11 @@ body {
   box-sizing: inherit; }
 
 .crud {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  background: url("./back.jpeg");
+  background-size: cover;
+  height: 1000px;
+}
 
 .container {
   padding-right: 15px;
