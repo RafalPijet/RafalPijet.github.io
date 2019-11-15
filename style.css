@@ -16,18 +16,30 @@ textarea {
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #141414;
+}
+
+h2, p {
+  color: #ced6e0;
+  margin: 0;
+}
 
 *,
 *::before,
 *::after {
   box-sizing: inherit; }
 
-.crud {
-  margin-bottom: 20px;
+.background-main {
   background: url("./back.jpeg");
   background-size: cover;
-  height: 1000px;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  height: 450px;
 }
 
 .container {
@@ -35,6 +47,61 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+
+.description {
+  display: inherit;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  max-width: 450px;
+  margin-top: 20px;
+}
+
+.width-max {
+  width: 100%;
+}
+
+.logo-spring {
+  height: 80px;
+  position: absolute;
+  top: 27px;
+  left: 192px;
+}
+
+.face {
+  width: 100px;
+  height: 156px;
+}
+
+.relative-position {
+  position: relative;
+}
+
+.picture-box {
+  height: fit-content;
+}
+
+.logos {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  height: 850px;
+}
+
+.logo-html-css {
+  position: absolute;
+  right: 28px;
+  top: -19px;
+  width: 130px;
+}
+
+.logo-java {
+  height: 115px;
+  position: absolute;
+  top: 45px;
+  left: 45px;
+}
 
 @media (min-width: 768px) {
   .container {
