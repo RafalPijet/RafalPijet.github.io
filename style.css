@@ -54,12 +54,21 @@ h2, p {
   flex-direction: column;
   width: 100%;
   height: fit-content;
-  max-width: 450px;
+  max-width: 470px;
   margin-top: 20px;
 }
 
 .width-max {
   width: 100%;
+}
+
+.background-description {
+  background-color: #141414;
+}
+
+.carousel {
+  width: 100%;
+  max-width: 600px;
 }
 
 .logo-spring {
@@ -101,6 +110,12 @@ h2, p {
   position: absolute;
   top: 45px;
   left: 45px;
+}
+
+.logo-hibernate {
+  position: absolute;
+  top: 165px;
+  left: 123px;
 }
 
 @media (min-width: 768px) {
