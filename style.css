@@ -33,6 +33,14 @@ a {
   color: #1e90ff;
 }
 
+button {
+  outline: none;
+}
+
+section {
+  margin-top: 20px;
+}
+
 *,
 *::before,
 *::after {
@@ -81,9 +89,9 @@ a {
 }
 
 .carousel {
-  margin-top: 10px;
+  margin-top: 5px;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .logo-spring {
@@ -205,6 +213,97 @@ a {
   width: 113px;
   right: 76px;
   top: 388px;
+}
+
+.icon-btn, i.fa {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 40px;
+  transition-duration: .5s;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+}
+
+i.fa {
+  line-height: 75px;
+  margin: -5px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.fa-twitter {
+  color: #4099ff;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-google-plus {
+  color: #db5a3c;
+}
+
+.fa-instagram {
+  color: #5c3d2e;
+}
+
+.fa-github {
+  color: #4183c4;
+}
+
+.fa:hover {
+  color: #ffffff;
+}
+
+.twitter:hover {
+  background-color: #4099ff;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+
+.google-plus:hover {
+  background-color: #db5a3c;
+}
+
+.instagram:hover {
+  background-color: #5c3d2e;
+}
+
+.github:hover {
+  background-color: #4183c4;
+}
+
+.facebook-handling:before {
+  position: absolute;
+  bottom: -16px;
+  right: 15px;
+}
+
+.github-handling:before {
+  position: absolute;
+  bottom: -14px;
+  right: 10px;
+}
+
+.linkedin-handling:before {
+   position: absolute;
+   bottom: -12px;
+   right: 10px;
+ }
+
+.email-handling:before {
+  position: absolute;
+  bottom: -13px;
+  right: 10px;
 }
 
 @media (min-width: 768px) {
