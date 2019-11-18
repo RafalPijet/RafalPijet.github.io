@@ -25,6 +25,14 @@ h2, p {
   margin: 0;
 }
 
+h4 {
+  margin: 0;
+}
+
+a {
+  color: #1e90ff;
+}
+
 *,
 *::before,
 *::after {
@@ -64,11 +72,18 @@ h2, p {
 
 .background-description {
   background-color: #141414;
+  padding: 10px;
+  opacity: .8;
+  width: 90%;
+  left: 20px;
+  bottom: 5px;
+  border-radius: 5px;
 }
 
 .carousel {
+  margin-top: 20px;
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .logo-spring {
