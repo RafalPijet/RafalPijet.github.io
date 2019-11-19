@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #141414;
+  background-color: #000;
 }
 
 h2, p {
@@ -46,12 +46,18 @@ section {
   margin-left: auto;
 }
 
+.text-align-right {
+  text-align: right;
+}
+
 .background-main {
-  background: url("./back.jpeg");
+  background: url("./komp-back.jpg");
   background-size: cover;
   display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
   justify-content: flex-end;
-  height: 1100px;
+  height: 900px;
 }
 
 .description {
@@ -64,18 +70,24 @@ section {
 }
 
 .first-box {
-  display: flex;
+  margin-top: 50px;
   width: 100%;
-  justify-content: flex-end;
-  margin-right: 35px;
 }
 
 .second-box {
-  width: 100%;
+  margin-top: 50px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 453px;
+  justify-content: space-between;
+}
+
+.third-box {
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   height: fit-content;
-  justify-content: space-between;
 }
 
 .background-description {
@@ -91,7 +103,7 @@ section {
 .carousel {
   margin-top: 5px;
   width: 100%;
-  max-width: 520px;
+  max-width: 570px;
 }
 
 .face {
@@ -139,14 +151,6 @@ section {
 
 .logos {
   position: relative;
-  margin-top: 138px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logos-next {
   width: 100%;
   display: flex;
   justify-content: space-between;
