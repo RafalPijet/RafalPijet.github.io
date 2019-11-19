@@ -6,14 +6,6 @@ html {
   margin: 0;
   padding: 0; }
 
-input,
-textarea {
-  width: 100%;
-  padding: 5px;
-  margin: 0;
-  border-radius: 2px;
-  border: 1px solid #ccc; }
-
 body {
   margin: 0;
   padding: 0;
@@ -46,36 +38,51 @@ section {
 *::after {
   box-sizing: inherit; }
 
-.background-main {
-  background: url("./back.jpeg");
-  background-size: cover;
-}
-
-.info {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 20px;
-  height: 450px;
-}
-
 .container {
+  width: 1170px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+}
+
+.background-main {
+  background: url("./back.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  height: 1100px;
+}
 
 .description {
   display: inherit;
   align-items: center;
   flex-direction: column;
-  width: 100%;
   height: fit-content;
   max-width: 470px;
   margin-top: 20px;
 }
 
-.width-max {
+.first-box {
+  display: flex;
   width: 100%;
+  justify-content: flex-end;
+  margin-right: 35px;
+}
+
+.second-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  justify-content: space-between;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
 }
 
 .background-description {
@@ -91,14 +98,7 @@ section {
 .carousel {
   margin-top: 5px;
   width: 100%;
-  max-width: 500px;
-}
-
-.logo-spring {
-  height: 80px;
-  position: absolute;
-  top: 27px;
-  left: 192px;
+  max-width: 520px;
 }
 
 .face {
@@ -106,113 +106,58 @@ section {
   height: 156px;
 }
 
-.relative-position {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 35px;
-}
-
 .picture-box {
   height: fit-content;
 }
 
-.logos {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  height: 850px;
+.logo-30 {
+  width: 30px;
 }
 
-.logo-html-css {
-  position: absolute;
-  right: 41px;
-  top: -19px;
-  width: 188px;
+.logo-55 {
+  width: 55px;
+}
+.logo-40 {
+  width: 40px;
 }
 
-.logo-java {
-  height: 115px;
-  position: absolute;
-  top: 45px;
-  left: 45px;
-}
-
-.logo-hibernate {
-  position: absolute;
-  top: 165px;
-  left: 123px;
-}
-
-.logo-inteliij {
-  width: 70px;
-  align-self: flex-end;
-}
-
-.logo-junit {
-  position: absolute;
-  right: 95px;
-  bottom: 100px;
-  width: 70px;
-  align-self: flex-end;
-  justify-self: center;
-}
-
-.logo-python {
-  position: absolute;
-  width: 80px;
-  left: 95px;
-  bottom: 40px;
-  align-self: flex-end;
-}
-
-.logo-git {
-  position: absolute;
-  width: 50px;
-  right: 60px;
-  top: 36px;
-}
-
-.logo-mongodb {
-  position: absolute;
+.logo-100 {
   width: 100px;
-  right: 88px;
-  top: 286px;
 }
 
-.logo-react {
-  width: 50px;
-  position: absolute;
-  right: 143px;
-  top: 100px;
+.logo-110 {
+  width: 110px;
+  z-index: 2;
 }
 
-.logo-nodejs {
-  width: 60px;
-  position: absolute;
-  right: 101px;
-  top: 190px;
+.logo-item {
+  position: relative;
 }
 
-.logo-redux {
-  width: 50px;
+.logos::before {
+  content: "";
   position: absolute;
-  right: 73px;
-  top: 103px;
+  background-color: #fff;
+  width: 110px;
+  height: 10px;
+  left: 50px;
+  top: 1px;
 }
 
-.logo-sass {
-  width: 50px;
-  position: absolute;
-  right: 100px;
-  top: 333px;
+.logos {
+  position: relative;
+  margin-top: 138px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo-express {
-  position: absolute;
-  width: 113px;
-  right: 76px;
-  top: 388px;
+.logos-next {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon-btn, i.fa {
@@ -238,20 +183,8 @@ i.fa {
   height: 50px;
 }
 
-.fa-twitter {
-  color: #4099ff;
-}
-
 .fa-facebook {
   color: #3b5998;
-}
-
-.fa-google-plus {
-  color: #db5a3c;
-}
-
-.fa-instagram {
-  color: #5c3d2e;
 }
 
 .fa-github {
@@ -262,20 +195,8 @@ i.fa {
   color: #ffffff;
 }
 
-.twitter:hover {
-  background-color: #4099ff;
-}
-
 .facebook:hover {
   background-color: #3b5998;
-}
-
-.google-plus:hover {
-  background-color: #db5a3c;
-}
-
-.instagram:hover {
-  background-color: #5c3d2e;
 }
 
 .github:hover {
@@ -285,7 +206,7 @@ i.fa {
 .facebook-handling:before {
   position: absolute;
   bottom: -16px;
-  right: 15px;
+  right: 17px;
 }
 
 .github-handling:before {
@@ -305,128 +226,3 @@ i.fa {
   bottom: -13px;
   right: 10px;
 }
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px; } }
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px; } }
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px; } }
-
-.kodilla-heading--main {
-  margin: 20px auto;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 400; }
-
-.datatable__row {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  border: 1px solid #ccc;
-  border-bottom: none;
-  margin: 0; }
-
-.datatable__row-section-wrapper {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-around; }
-
-.datatable__row:first-of-type {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px; }
-
-.datatable__row:last-of-type {
-  border-bottom: 1px solid #ccc;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px; }
-
-.datatable__row input,
-.datatable__row textarea {
-  display: none; }
-
-.datatable__row .datatable__button--editing {
-  display: none; }
-
-.datatable__row--editing input,
-.datatable__row--editing textarea {
-  display: block; }
-
-.datatable__row--editing .datatable__field-value {
-  display: none; }
-
-.datatable__row--editing .datatable__button {
-  display: none; }
-
-.datatable__row--editing .datatable__button--editing,
-.datatable__row--editing .datatable__button--card-creation {
-  display: block; }
-
-.datatable__row--add input,
-.datatable__row--add textarea {
-  display: block; }
-
-.datatable__field-value {
-  margin-bottom: 0;
-  font-size: 14px; }
-
-.datatable__row-section {
-  border: none;
-  margin: 0;
-  padding: 10px;
-  flex-grow: 1; }
-
-.datatable__row-section--button-section,
-.datatable__row-section--trello-section {
-  margin-left: auto;
-  align-self: center;
-  flex-shrink: 1;
-  flex-grow: 0;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: center; }
-
-.datatable__input-label {
-  display: block;
-  text-align: left;
-  font-size: 14px;
-  margin: 5px auto;
-  font-weight: 500;
-  letter-spacing: 0.6px; }
-
-.datatable__button {
-  color: #fff;
-  background-color: #28a745;
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  border: 1px solid transparent;
-  padding: 8px 12px;
-  font-size: 12px;
-  min-width: 120px;
-  line-height: 1.25;
-  border-radius: 4px; }
-
-.datatable__select {
-  display: block;
-  margin-bottom: 10px; }
-
-.datatable__tasks-container:empty {
-  position: relative; }
-
-.datatable__tasks-container:empty::after {
-  content: 'Currently, there are no tasks available.'; }
-
-.template {
-  display: none; }
