@@ -4,7 +4,8 @@ html {
   font-size: 16px;
   font-weight: normal;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
   margin: 0;
@@ -29,10 +30,6 @@ button {
   outline: none;
 }
 
-section {
-  margin-top: 20px;
-}
-
 *,
 *::before,
 *::after {
@@ -51,13 +48,13 @@ section {
 }
 
 .background-main {
-  background: url("./komp-back.jpg");
+  background: url("./back.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
   justify-content: flex-end;
-  height: 773px;
+  height: 730px;
 }
 
 .description {
@@ -69,18 +66,106 @@ section {
   margin-top: 20px;
 }
 
+.social-select {
+  position: absolute;
+  right: 42px;
+  top: 10px;
+  content: "";
+  width: 73px;
+  height: 331px;
+  z-index: 10;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  justify-content: space-around;
+  background-color: #000000;
+}
+
 .first-box {
   margin-top: 50px;
   width: 100%;
 }
 
 .second-box {
-  margin-top: 50px;
+  position: relative;
+  margin-top: 335px;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
   height: 453px;
   justify-content: space-between;
+}
+
+.second-box::after {
+  content: url("./macbook.png");
+  position: absolute;
+  top: -12px;
+  left: -88px;
+  z-index: 3;
+}
+
+.tablet {
+  background: url("./ipad.png");
+  background-size: cover;
+  position: absolute;
+  top: -130px;
+  right: 5px;
+  height: 104%;
+  width: 50%;
+  z-index: 1;
+  transition: 1s;
+}
+
+.tablet:hover {
+  top: -330px
+}
+
+.tablet:hover .hello {
+  color: #191919;
+}
+
+.tablet:hover .rest-info h3, .tablet:hover .rest-info p {
+  color: #fed330;
+}
+
+.tablet:hover .face {
+  opacity: .6;
+}
+
+.hello {
+  color: #fed330;
+  position: absolute;
+  left: 40px;
+  top: 65px;
+  transition: 1s;
+  animation: hello-action .7s infinite;
+}
+
+.face {
+  position: absolute;
+  width: 29%;
+  top: 50px;
+  left: 171px;
+  transform: rotate(12deg);
+  opacity: 0;
+  transition: 1s;
+}
+
+.rest-info {
+  position: absolute;
+  left: 32px;
+  bottom: 113px;
+  width: 63%;
+  text-align: center;
+}
+
+.rest-info h3, p {
+  color: #000;
+  transition: 2s;
 }
 
 .third-box {
@@ -103,12 +188,8 @@ section {
 .carousel {
   margin-top: 5px;
   width: 100%;
-  max-width: 570px;
-}
-
-.face {
-  width: 100px;
-  height: 156px;
+  max-width: 455px;
+  z-index: 2;
 }
 
 .picture-box {
@@ -159,13 +240,13 @@ section {
 }
 
 .icon-btn, i.fa {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: none;
   border-radius: 50%;
   margin: 10px;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 30px;
   transition-duration: .5s;
 }
 
@@ -177,8 +258,8 @@ i.fa {
   line-height: 75px;
   margin: -5px;
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
 }
 
 .fa-facebook {
@@ -203,25 +284,42 @@ i.fa {
 
 .facebook-handling:before {
   position: absolute;
-  bottom: -16px;
-  right: 17px;
+  bottom: -22px;
+  right: 9px;
 }
 
 .github-handling:before {
   position: absolute;
-  bottom: -14px;
-  right: 10px;
+  bottom: -21px;
+  right: 4px;
 }
 
 .linkedin-handling:before {
    position: absolute;
-   bottom: -12px;
-   right: 10px;
+   bottom: -19px;
+   right: 4px;
  }
 
 .email-handling:before {
   position: absolute;
-  bottom: -13px;
-  right: 10px;
+  bottom: -21px;
+  right: 4px;
 }
 
+@keyframes hello-action {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(1px, 3px);
+  }
+  50% {
+    transform: translate(-3px, -3px);
+  }
+  75% {
+    transform: translate(1px, 3px);
+  }
+  100% {
+    transform: translate(3px,  1px);
+  }
+}
