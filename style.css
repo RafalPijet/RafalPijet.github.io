@@ -18,7 +18,7 @@ h2, p {
   margin: 0;
 }
 
-h4 {
+h3, h4 {
   margin: 0;
 }
 
@@ -110,7 +110,7 @@ button {
   color: #191919;
 }
 
-.tablet:hover .rest-info h3, .tablet:hover .rest-info p {
+.tablet:hover .rest-info h3, .tablet:hover .rest-info p, .tablet:hover .rest-info h4 {
   color: #48dbfb;
 }
 
@@ -145,9 +145,14 @@ button {
   text-align: center;
 }
 
-.rest-info h3, .rest-info p {
+.rest-info h3, .rest-info p, .rest-info h4 {
   color: #000;
   transition: 2s;
+}
+
+.rest-info h4 {
+  margin: 10px 0;
+  font-size: 13px;
 }
 
 .background-description {
@@ -220,7 +225,7 @@ button {
   left: 0;
   top: -360px;
   width: 40px;
-  animation: logo 4s infinite;
+  animation: logo 4.5s infinite;
   animation-delay: 7s;
   opacity: 0;
 }
@@ -290,7 +295,7 @@ button {
   left: 760px;
   top: -670px;
   width: 35px;
-  animation: logo 4s infinite;
+  animation: logo 4.5s infinite;
   animation-delay: 15.5s;
   opacity: 0;
 }
