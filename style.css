@@ -112,11 +112,11 @@ button {
 }
 
 .tablet:hover .rest-info h3, .tablet:hover .rest-info p, .tablet:hover .rest-info h4 {
-    color: #48dbfb;
+    color: #fff;
 }
 
 .hello {
-    color: #48dbfb;
+    color: #fff;
     position: absolute;
     left: 40px;
     top: 65px;
