@@ -13,22 +13,6 @@
 </head>
 <body>
 <main class="container background-main">
-    <div class="logos">
-        <img class="logo-java" src="./Java_programming_language.svg.png" alt="logo-java">
-        <img class="logo-python" src="./python.png" alt="logo-python">
-        <img class="logo-html-css-js" src="./html-css-js-next.png" alt="logo-html-css-js">
-        <img class="logo-react" src="./react.png" alt="logo-react">
-        <img class="logo-redux" src="./redux.png" alt="logo-redux">
-        <img class="logo-spring" src="./spring.png" alt="logo-spring">
-        <img class="logo-git" src="./git.png" alt="logo-git">
-        <img class="logo-junit" src="./junit.png" alt="logo-junit">
-        <img class="logo-mongodb" src="./mongodb.png" alt="logo-mongodb">
-        <img class="logo-express" src="./expressjs.png" alt="logo-express">
-        <img class="logo-sass" src="./sass.png" alt="logo-sass">
-        <img class="logo-intellij" src="./intellij-idea.png" alt="logo-intellij">
-        <img class="logo-nodejs" src="./nodejs.png" alt="logo-nodejs">
-        <img class="logo-hibernate" src="./hibernate.png" alt="logo-hibernate">
-    </div>
     <div class="second-box">
         <div id="myCarousel" class="slide carousel" data-ride="carousel" data-interval="3000" data-pause="hover">
             <div class="carousel-inner" role="listbox">
@@ -137,21 +121,49 @@
                 </a>
             </section>
         </div>
-        <div class="tablet">
-            <h2 class="hello">Hello...</h2>
-            <div class="rest-info">
+        <div class="tablet" id="tablet">
+            <div class="rest-info" id="scroll-item">
+                <h2 class="hello">Hello...</h2>
                 <h3>Rafal Pijet</h3>
                 <h4>junior web developer</h4>
                 <h4>junior java developer</h4>
                 <p>programming is my passion</p>
                 <p>favorite language: JAVA</p>
                 <p>favorite library: REACT</p>
+                <p>used technologies:</p>
+                <div class="logos">
+                    <img class="logo-html-css-js" src="./html-css-js-next.png" alt="logo-html-css-js">
+                    <div class="flex-around">
+                        <img class="logo-30" src="./Java_programming_language.svg.png" alt="logo-java">
+                        <img class="logo-45" src="./python.png" alt="logo-python">
+                    </div>
+                    <img class="logo-100" src="./mongodb.png" alt="logo-mongodb">
+                    <div class="flex-around">
+                        <img class="logo-40" src="./react.png" alt="logo-react">
+                        <img class="logo-40" src="./redux.png" alt="logo-redux">
+                    </div>
+                    <img class="logo-hibernate" src="./hibernate.png" alt="logo-hibernate">
+                    <div class="flex-around">
+                        <img class="logo-60" src="./spring.png" alt="logo-spring">
+                        <img class="logo-40" src="./git.png" alt="logo-git">
+                    </div>
+                    <img class="logo-express" src="./expressjs.png" alt="logo-express">
+                    <div class="flex-around">
+                        <img class="logo-60" src="./junit.png" alt="logo-junit">
+                        <img class="logo-sass" src="./sass.png" alt="logo-sass">
+                    </div>
+                    <img class="logo-100" src="./nodejs.png" alt="logo-nodejs">
+                    <div class="flex-around">
+                        <img class="logo-60" src="./masql.png" alt="logo-intellij">
+                        <img class="logo-60" src="./intellij-idea.png" alt="logo-intellij">
+                    </div>
+                </div>
             </div>
-
         </div>
     </div>
 </main>
 <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src="script.js"></script>
 </body>
 </html>

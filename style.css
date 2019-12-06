@@ -54,6 +54,13 @@ button {
     height: 730px;
 }
 
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
 .social-select {
     position: absolute;
     right: 42px;
@@ -75,7 +82,7 @@ button {
 
 .second-box {
     position: relative;
-    margin-top: 335px;
+    margin-top: 350px;
     width: 50%;
     display: flex;
     flex-wrap: wrap;
@@ -97,14 +104,14 @@ button {
     position: absolute;
     top: -130px;
     right: 5px;
-    height: 104%;
+    height: 110%;
     width: 50%;
     z-index: 1;
     transition: 1s;
 }
 
 .tablet:hover {
-    top: -330px
+    top: -350px
 }
 
 .tablet:hover .hello {
@@ -115,21 +122,34 @@ button {
     color: #fff;
 }
 
+.tablet:hover .logos {
+    opacity: 1;
+}
+
 .hello {
     color: #fff;
-    position: absolute;
-    left: 40px;
-    top: 65px;
     transition: .5s;
     animation: hello-action .7s infinite;
+}
+
+.logos {
+    width: 100%;
+    opacity: 0;
+    transition: .5s;
+}
+
+.logos>img:first-child {
+    margin-top: 20px;
 }
 
 .rest-info {
     position: absolute;
     left: 32px;
-    bottom: 120px;
+    bottom: 60px;
     width: 80%;
+    height: 300px;
     text-align: center;
+    overflow-y: scroll;
 }
 
 .rest-info h3, .rest-info p, .rest-info h4 {
@@ -149,6 +169,10 @@ button {
     margin: 20px 0;
 }
 
+.rest-info p:nth-of-type(4){
+    margin-top: 20px;
+}
+
 .background-description {
     background-color: #141414;
     padding: 10px;
@@ -166,162 +190,44 @@ button {
     z-index: 4;
 }
 
-.logo-java {
-    position: absolute;
-    left: 20px;
-    top: -500px;
+.logo-30 {
     width: 30px;
-    animation: logo 43s infinite;
-    z-index: 20;
 }
 
-.logo-python {
-    position: absolute;
-    left: 20px;
-    top: -500px;
+.logo-45 {
     width: 45px;
-    animation: logo 43s infinite;
-    animation-delay: 3s;
-    opacity: 0;
-    z-index: 22;
 }
 
-.logo-react {
-    position: absolute;
-    left: 20px;
-    top: -500px;
-    width: 30px;
-    animation: logo 43s infinite;
-    animation-delay: 6s;
-    opacity: 0;
-    z-index: 23;
-}
-
-.logo-redux {
-    position: absolute;
-    left: 20px;
-    top: -500px;
-    width: 30px;
-    animation: logo 43s infinite;
-    animation-delay: 9s;
-    opacity: 0;
-    z-index: 24;
-}
-
-.logo-spring {
-    position: absolute;
-    left: 20px;
-    top: -500px;
+.logo-40 {
     width: 40px;
-    animation: logo 43s infinite;
-    animation-delay: 12s;
-    opacity: 0;
-    z-index: 25;
 }
 
-.logo-git {
-    position: absolute;
-    left: 20px;
-    top: -500px;
-    width: 30px;
-    animation: logo 43s infinite;
-    animation-delay: 15s;
-    opacity: 0;
-    z-index: 26;
-}
-
-.logo-junit {
-    position: absolute;
-    left: 20px;
-    top: -500px;
-    width: 50px;
-    animation: logo 43s infinite;
-    animation-delay: 18s;
-    opacity: 0;
-    z-index: 27;
-}
-
-.logo-mongodb {
-    position: absolute;
-    left: 20px;
-    top: -500px;
+.logo-60 {
     width: 60px;
-    animation: logo 43s infinite;
-    animation-delay: 21s;
-    opacity: 0;
-    z-index: 28;
+}
+
+.logo-33 {
+    width: 33px;
+}
+
+.logo-100 {
+    width: 100px;
 }
 
 .logo-express {
-    position: absolute;
-    left: 20px;
-    top: -500px;
-    width: 60px;
-    animation: logo 43s infinite;
-    animation-delay: 24s;
-    opacity: 0;
-    z-index: 29;
+    width: 150px;
 }
 
 .logo-html-css-js {
-    position: absolute;
-    left: 20px;
-    top: -500px;
-    width: 60px;
-    animation: logo 43s infinite;
-    animation-delay: 27s;
-    opacity: 0;
-    z-index: 21;
+    width: 85px;
 }
 
 .logo-hibernate {
-    position: absolute;
-    left: 20px;
-    top: -500px;
-    width: 60px;
-    animation: logo 43s infinite;
-    animation-delay: 30s;
-    opacity: 0;
-    z-index: 30;
+    width: 110px;
 }
 
 .logo-sass {
-    position: absolute;
-    left: 20px;
-    top: -500px;
-    width: 35px;
-    animation: logo 43s infinite;
-    animation-delay: 33s;
-    opacity: 0;
-    z-index: 31;
-}
-
-.logo-intellij {
-    position: absolute;
-    left: 20px;
-    top: -500px;
-    width: 35px;
-    animation: logo 43s infinite;
-    animation-delay: 36s;
-    opacity: 0;
-    z-index: 33;
-}
-
-.logo-nodejs {
-    position: absolute;
-    left: 20px;
-    top: -500px;
-    width: 35px;
-    animation: logo 43s infinite;
-    animation-delay: 39s;
-    opacity: 0;
-    z-index: 32;
-}
-
-.logos {
-    display: none;
-    position: relative;
-    width: 100%;
+    width: 50px;
 }
 
 .icon-btn, i.fa {
@@ -409,21 +315,3 @@ i.fa {
     }
 }
 
-@keyframes logo {
-    0% {
-        opacity: .8;
-        transform: scale(.3);
-    }
-    20% {
-        opacity: .5;
-        transform: scale(2) translate(0, 230px);
-    }
-    22% {
-        opacity: 0;
-        transform: scale(1) translate(0, 400px);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(0);
-    }
-}
