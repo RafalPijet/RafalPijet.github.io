@@ -50,8 +50,8 @@ button {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
-    justify-content: flex-end;
-    height: 730px;
+    /*justify-content: flex-end;*/
+    height: 760px;
 }
 
 .flex-around {
@@ -63,10 +63,10 @@ button {
 
 .social-select {
     position: absolute;
-    right: 42px;
+    right: 71px;
     top: 10px;
     content: "";
-    width: 73px;
+    width: 64px;
     height: 331px;
     z-index: 10;
 }
@@ -82,40 +82,48 @@ button {
 
 .second-box {
     position: relative;
-    margin-top: 350px;
-    width: 50%;
+    background-image: url("./macbook.png");
+    background-size: cover;
+    /*margin-top: 350px;*/
+    max-width: 700px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: 453px;
+    max-height: 427px;
+    height: 100%;
     justify-content: space-between;
+    z-index: 2;
 }
 
-.second-box::after {
-    content: url("./macbook.png");
-    position: absolute;
-    top: -12px;
-    left: -88px;
-    z-index: 3;
-}
+/*.second-box::after {*/
+/*    content: url("./macbook.png");*/
+/*    position: absolute;*/
+/*    top: -12px;*/
+/*    left: -88px;*/
+/*    z-index: 3;*/
+/*}*/
 
 .tablet {
     background: url("./ipad.png");
     background-size: cover;
     position: absolute;
-    top: -130px;
-    right: 5px;
-    height: 110%;
-    width: 50%;
+    top: 181px;
+    right: 160px;
+    width: 100%;
+    max-width: 285px;
+    height: 100%;
+    max-height: 418px;
     z-index: 1;
     transition: 1s;
 }
 
 .tablet:hover {
-    top: -350px
+    top: 0;
 }
 
 .tablet:hover .hello {
     color: #000;
+    margin-top: 0;
 }
 
 .tablet:hover .rest-info h3, .tablet:hover .rest-info p, .tablet:hover .rest-info h4 {
@@ -127,6 +135,7 @@ button {
 }
 
 .hello {
+    margin-top: 20px;
     color: #fff;
     transition: .5s;
     animation: hello-action .7s infinite;
@@ -144,12 +153,13 @@ button {
 
 .rest-info {
     position: absolute;
-    left: 32px;
-    bottom: 60px;
-    width: 80%;
+    left: 25px;
+    bottom: 70px;
+    width: 84%;
     height: 300px;
     text-align: center;
     overflow-y: scroll;
+    background-color: #000;
 }
 
 .rest-info h3, .rest-info p, .rest-info h4 {
@@ -184,10 +194,12 @@ button {
 }
 
 .carousel {
-    margin-top: 5px;
+    /*margin: 5px 0 0 4px;*/
     width: 100%;
-    max-width: 455px;
-    z-index: 4;
+    max-width: 480px;
+    z-index: 11;
+    left: 88px;
+    top: 13px;
 }
 
 .logo-30 {
@@ -312,6 +324,88 @@ i.fa {
     }
     100% {
         transform: translate(3px, 1px);
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .background-main {
+        align-items: center;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .container {
+        width: 900px;
+    }
+
+    .background-main {
+        align-items: center;
+    }
+
+    .second-box {
+        width: 66%;
+    }
+}
+
+@media (max-width: 767px) {
+    .background-main {
+        align-items: flex-start;
+        background-image: none;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .second-box {
+        margin-top: 0;
+    }
+
+    .second-box::after {
+        top: 0;
+        left: 0;
+    }
+
+    .social-select {
+        right: -55px;
+        top: 23px;
+    }
+
+    .carousel {
+        margin: 12px 0 0 84px;
+    }
+
+    .tablet {
+        transform: rotate(90deg);
+        right: -60px;
+        top: -62px;
+        width: 62%;
+    }
+
+    .tablet:hover {
+        top: -62px;
+        right: -400px;
+    }
+
+    .rest-info {
+        transform: rotate(-90deg);
+        bottom: 113px;
+        left: 32px;
+        height: 294px;
+    }
+
+    .rest-info h3, .rest-info h4, .rest-info p {
+        color: #fff;
+    }
+
+    .rest-info h3 {
+        margin-top: 30px;
+    }
+
+    .hello {
+        display: none;
+    }
+
+    .logos {
+        opacity: 1;
     }
 }
 
