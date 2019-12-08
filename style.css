@@ -50,7 +50,6 @@ button {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
-    /*justify-content: flex-end;*/
     height: 760px;
 }
 
@@ -82,9 +81,6 @@ button {
 
 .second-box {
     position: relative;
-    background-image: url("./macbook.png");
-    background-size: cover;
-    /*margin-top: 350px;*/
     max-width: 700px;
     width: 100%;
     display: flex;
@@ -95,20 +91,16 @@ button {
     z-index: 2;
 }
 
-/*.second-box::after {*/
-/*    content: url("./macbook.png");*/
-/*    position: absolute;*/
-/*    top: -12px;*/
-/*    left: -88px;*/
-/*    z-index: 3;*/
-/*}*/
+.second-box >img:first-child {
+    z-index: 2;
+}
 
 .tablet {
     background: url("./ipad.png");
     background-size: cover;
     position: absolute;
-    top: 181px;
-    right: 160px;
+    top: -117px;
+    right: 35px;
     width: 100%;
     max-width: 285px;
     height: 100%;
@@ -118,7 +110,7 @@ button {
 }
 
 .tablet:hover {
-    top: 0;
+    top: -335px;
 }
 
 .tablet:hover .hello {
@@ -188,13 +180,13 @@ button {
     padding: 10px;
     opacity: .8;
     width: 90%;
-    left: 28px;
+    left: 24px;
     bottom: 5px;
     border-radius: 5px;
 }
 
 .carousel {
-    /*margin: 5px 0 0 4px;*/
+    position: absolute;
     width: 100%;
     max-width: 480px;
     z-index: 11;
@@ -341,10 +333,6 @@ i.fa {
     .background-main {
         align-items: center;
     }
-
-    .second-box {
-        width: 66%;
-    }
 }
 
 @media (max-width: 767px) {
@@ -352,44 +340,16 @@ i.fa {
         align-items: flex-start;
         background-image: none;
         flex-direction: row;
-        margin-top: 10px;
-    }
-
-    .second-box {
-        margin-top: 0;
-    }
-
-    .second-box::after {
-        top: 0;
-        left: 0;
-    }
-
-    .social-select {
-        right: -55px;
-        top: 23px;
-    }
-
-    .carousel {
-        margin: 12px 0 0 84px;
+        margin-top: 330px;
     }
 
     .tablet {
-        transform: rotate(90deg);
-        right: -60px;
-        top: -62px;
-        width: 62%;
+        top: -335px;
+        right: 290px;
     }
 
-    .tablet:hover {
-        top: -62px;
-        right: -400px;
-    }
-
-    .rest-info {
-        transform: rotate(-90deg);
-        bottom: 113px;
-        left: 32px;
-        height: 294px;
+    .hello {
+        display: none;
     }
 
     .rest-info h3, .rest-info h4, .rest-info p {
@@ -400,12 +360,28 @@ i.fa {
         margin-top: 30px;
     }
 
-    .hello {
-        display: none;
-    }
-
     .logos {
         opacity: 1;
+    }
+
+    .social-select {
+        right: 216px;
+        top: -330px;
+    }
+
+    .carousel {
+        max-width: 380px;
+        left: 94px;
+        top: 13px;
+    }
+
+    .second-box > img:first-child {
+        width: 80%;
+        height: 80%;
+    }
+
+    .small-hidden {
+        visibility: hidden;
     }
 }
 
