@@ -383,5 +383,9 @@ i.fa {
     .small-hidden {
         visibility: hidden;
     }
+
+    .icon-btn:hover {
+        transform: scale(1);
+    }
 }
 
