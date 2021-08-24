@@ -110,13 +110,6 @@ button {
     top: 0;
 }
 
-.display {
-    position: absolute;
-    top: 27px;
-    left: 213px;
-    z-index: 6;
-}
-
 .tablet {
     background: url("./ipad.png");
     background-size: cover;
@@ -210,10 +203,28 @@ button {
 .carousel {
     position: absolute;
     width: 100%;
-    max-width: 480px;
     z-index: 11;
+}
+
+.project {
+    max-width: 480px;
     left: 88px;
     top: 13px;
+}
+
+.clip {
+    max-width: 850px;
+    left: 211px;
+    top: 30px;
+}
+
+.change-clip {
+    height: 480px;
+}
+
+.normal-movie {
+    width: 850;
+    height: 530;
 }
 
 .logo-30 {
@@ -323,10 +334,6 @@ i.fa {
     right: 4px;
 }
 
-.hidden-big {
-    visibility: hidden;
-}
-
 @keyframes hello-action {
     0% {
         transform: translate(0, 0);
@@ -358,19 +365,19 @@ i.fa {
         width: 100%;
     }
 
-    .hidden-middle {
-        visibility: hidden;
+    .small-movie {
+        width: 575;
+        height: 350;
     }
 
-    .hidden-big {
-        visibility: visible;
-    }
-
-    .display-middle {
-        position: absolute;
+    .clip-middle {
+        max-width: 574px;
+        left: 68px;
         top: 25px;
-        left: 67px;
-        z-index: 6;
+    }
+
+    .change-clip-middle {
+        height: 300px;
     }
 }
 
@@ -387,23 +394,23 @@ i.fa {
         max-width: 700px;
     }
 
+    .small-movie {
+        width: 575;
+        height: 350;
+    }
+
+    .clip-middle {
+        max-width: 574px;
+        left: 68px;
+        top: 25px;
+    }
+
+    .change-clip-middle {
+        height: 300px;
+    }
+
     .third-box > div:first-child img {
         width: 100%;
-    }
-
-    .hidden-middle {
-        visibility: hidden;
-    }
-
-    .hidden-big {
-        visibility: visible;
-    }
-
-    .display-middle {
-        position: absolute;
-        top: 25px;
-        left: 67px;
-        z-index: 6;
     }
 }
 
@@ -424,6 +431,12 @@ i.fa {
         display: none;
     }
 
+    .project-small {
+        max-width: 423px;
+        left: 72px;
+        top: 13px;
+    }
+
     .rest-info h3, .rest-info h4, .rest-info p {
         color: #fff;
     }
@@ -441,15 +454,9 @@ i.fa {
         top: -330px;
     }
 
-    .carousel {
-        max-width: 380px;
-        left: 94px;
-        top: 13px;
-    }
-
     .second-box > img:first-child {
         width: 80%;
-        height: 80%;
+        height: 90%;
     }
 
     .small-hidden {

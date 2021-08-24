@@ -17,22 +17,40 @@
         <div>
             <img src="./iMac.png" alt="iMac">
         </div>
-        <div class="display hidden-middle">
-            <iframe width="850" height="530" src="https://www.youtube.com/embed/SUUC3rkGiLg" frameborder="0"
+        <div id="clipsCarousel" class="slide carousel clip clip-middle" data-ride="carousel" data-interval="5000" data-pause="hover">
+            <div class="carousel-inner" role="listbox">
+                <div class="item">
+                    <iframe class="normal-movie small-movie" src="https://www.youtube.com/embed/SUUC3rkGiLg" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
-            </iframe>
-        </div>
-        <div class="display-middle hidden-big">
-            <iframe width="575" height="350" src="https://www.youtube.com/embed/SUUC3rkGiLg" frameborder="0"
+                    </iframe>
+                </div>
+                <div class="item active">
+                    <iframe class="normal-movie small-movie" src="https://www.youtube.com/embed/zEEluSUywjY" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
-            </iframe>
+                    </iframe>
+                </div>
+                <div class="item">
+                    <iframe class="normal-movie small-movie" src="https://www.youtube.com/embed/zm3dYjrxtWM" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                    </iframe>
+                </div>
+                <a class="left carousel-control change-clip change-clip-middle" href="#clipsCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control change-clip change-clip-middle" href="#clipsCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
     </div>
     <div class="second-box">
         <img src="./macbook.png" alt="macbook-image">
-        <div id="myCarousel" class="slide carousel" data-ride="carousel" data-interval="3000" data-pause="hover">
+        <div id="myCarousel" class="slide carousel project project-small" data-ride="carousel" data-interval="3000" data-pause="hover">
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <img class="img-rounded" src="./pollution.png">
@@ -89,15 +107,6 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img class="img-rounded" src="./paper-stone-shears.png">
-                    <div class="carousel-caption background-description">
-                        <h4><a title="github.com/RafalPijet/paper-rock-scissors-game" target="_blank"
-                               href="https://github.com/RafalPijet/paper-rock-scissors-game">paper-rock-scissors</a>
-                        </h4>
-                        <p>popular game</p>
-                    </div>
-                </div>
-                <div class="item">
                     <img class="img-rounded" src="./space-invaders.png">
                     <div class="carousel-caption background-description">
                         <h4><a title="github.com/RafalPijet/space-invaders" target="_blank"
@@ -135,10 +144,10 @@
             <div class="rest-info" id="scroll-item">
                 <h2 class="hello">Hello...</h2>
                 <h3>Rafal Pijet</h3>
-                <h4>junior web developer</h4>
-                <h4>junior fullstack developer</h4>
+                <h4>junior react developer</h4>
+                <h4>junior nodeJS developer</h4>
                 <p>programming is my passion</p>
-                <p>favorite language: JS</p>
+                <p>favorite language: TS</p>
                 <p>favorite library: REACT</p>
                 <p>stack: MERN</p>
                 <p>used technologies:</p>
@@ -166,7 +175,7 @@
                     <img class="logo-100" src="./nodejs.png" alt="logo-nodejs">
                     <div class="flex-around">
                         <img class="logo-60" src="./masql.png" alt="logo-intellij">
-                        <img class="logo-60" src="./intellij-idea.png" alt="logo-intellij">
+                        <img class="logo-60" src="./ts_logo.png" alt="logo-ts">
                     </div>
                 </div>
             </div>
